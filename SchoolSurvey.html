@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+   
+            <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine|Inconsolata|Droid+Sans|italic">
+     
+        <style>
+            body{
+      
+   background-image: url( url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+         
+                background:linear-gradient(-180deg,blue,yellow,orange,green,red);
+          
+            }
+            
+            
+            h1{
+                font-family:Inconsolata ;
+            font-weight: 100%;
+                font-display: block;
+                
+            
+            
+                
+                display: flex;
+                padding-bottom: 40px;
+                font-size: 50px;
+                color:darkblue;
+                
+                
+                
+    
+                
+            }
+            
+            .header{
+               
+                border-width: 100%;
+              
+                
+            }
+            .container{
+                border-bottom-left-radius: 50px;
+                border-bottom-right-radius: 50px;
+                
+                
+                padding-top: 10%;
+                padding-left: 20%;
+               border-bottom-color: brown;
+              
+                
+                padding-bottom: 120px;
+                
+                border: solid blue;
+                margin-left: 20px;
+                  
+                
+            }
+            .form-group{
+                font-size: 18px;
+                
+                font-family: italic;
+                font-size: 20px;
+                       
+              
+            }
+          
+            .form-control{
+                backface-visibility: visible;
+                background-color:whitesmoke;
+                text-align:25px;
+                
+              
+                
+            }
+            label {
+                
+                
+         display: flex;
+                  font-family: italic;
+                
+  align-items: center;
+  font-size: 30px;
+  margin-bottom:3.5px;
+}
+            .submit-button {
+                
+                
+                 
+                width: 70%;
+                padding-bottom: 20px;
+                text-align:center;
+                margin-left: 20px;
+                margin-top: 10px;
+                border-color: blue;
+                box-shadow: 5px 5px blue, 10px 10px red, 15px 15px pink;
+                background: orange;
+            } 
+            
+            #drop-down{
+                width: 70%;
+                padding-top: 20px;
+                border-radius: 15px;
+                font-family:italic ;
+                border-color: yellow;
+                color: deeppink;
+                font-size: 25px;
+                
+            }
+            #name{
+               
+                padding-top: 20px;
+                width: 70%;
+                border-radius: 15px;
+                border-color: yellow;
+                font-size: 20px;
+            }
+            #email{
+                padding-top: 20px;
+                width: 70%;
+                border-radius: 15px;
+                border-color: yellow;
+                font-size: 20px;
+            }
+            
+            #number{
+                padding-top: 20px;
+                width: 70%;
+                border-radius: 15px;
+                border-color: yellow;
+                font-size: 20px;
+            }
+            p{
+                padding-top: 20px;
+                
+                width: 70%;
+               
+                font-family: italic;
+                
+            }
+            
+            
+        
+        
+        </style>
+        <div class="container">
+            <header class="header"><h1 id="title" class="text-center">   Children Public Survey Form</h1> 
+            </header>
+            <form id="survey form">
+               <div class="form-group">
+                   <label id="name-label" for="name">Name</label>
+                   <input type="text" id="name" class="form-control" placeholder="enter your name here..." required/>    
+               </div>
+               
+               <div class="form-group">
+               <label id="email-label" for="email">Email</label>
+               <input type="text" id="email" class="form-control" 
+               name="email" placeholder="enter your email add here..."/>
+               </div>
+               
+               <div class="form-group">
+                 <label id="number-id" for="age">Age</label>
+                 <input type="number"
+                 min="10"
+                 max="99"
+                 class="form-control"
+                 id="number"
+                 placeholder="enter valid age..."
+                 name="age"/>   
+               </div>
+               
+               <div class="form-group">
+                   <p >Which option best describes your current role in school?</p>
+                   <select id="drop-down" class="form-control" required>
+                     <option disabled selected value>Select Your current role</option>
+                     <option value="Teacher">teacher</option>
+                     <option  value="Student">Student</option>
+                     <option value="Watchman">WatchMan</option>
+                     <option value="other">Other</option>
+                     </select>
+                </div>
+                     
+                     <div class="form-group">
+                         <p>What is your Feedback about college ?</p>
+                         <label>
+                         <input type="radio" name="prefer" value="Good"  class="input-radio"/>Good</label>
+                         
+                          <label>
+                         <input type="radio" name="prefer" value="Better"  class="input-radio"/>Better</label>
+                         <label>
+                         <input type="radio" name="prefer" value="not intrested"  class="input-radio"/>Not-Intrested</label>
+                </div>
+                         <div class="form-group">
+                             <input type="submit" id="submit" class="submit-button">
+                                 
+                             </button>
+                         </div>  
+            </form>     
+    </body>
+    
+</html>
